@@ -13,8 +13,6 @@ class Solution {
                 dp[i][j] = dp[i - 1][j] + dp[i][j - 1];
             }
         }
-        
-        // The bottom-right cell contains the total number of unique paths
         return dp[m - 1][n - 1];
     }
 }
